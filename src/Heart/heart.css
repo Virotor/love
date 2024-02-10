@@ -1,0 +1,122 @@
+body {
+    background-color: #eee;
+}
+
+.heart {
+    position: relative;
+    width: 10em;
+    height: 15em    ;
+    background-color: red;
+    box-shadow: -1px 0px 2px #444;
+
+    -webkit-border-radius: 10em 10em 0 0;
+    -moz-border-radius: 10em 10em 0 0;
+    border-radius: 10em 10em 0 0;
+
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.heart:before {
+    position: absolute;
+    width: 15em;
+    height: 10em;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: red;
+    box-shadow: 0px 3px 3px #444444;
+    -webkit-border-radius: 10em 10em 0 0;
+    -moz-border-radius: 10em 10em 0 0;
+    border-radius: 0 10em 10em 0;
+}
+
+.heart:hover:before,
+.heart:hover {
+    box-shadow: none;
+}
+
+
+.heartWrapper {
+    margin: 10px;
+}
+
+.petals {
+    position: relative;
+    margin: 2em 8em;
+    }
+  
+  .petals:before,
+  .petals:after,
+  .wrapper:after {
+    position: absolute;
+    content: "";
+    display: block;
+    }
+  .petals,
+  .petals:before,
+  .petals:after{
+    width: 5em;
+    height: 5em;
+    background:  lightcyan;
+    box-shadow: 0 0 0px 10px skyblue inset;
+    border-radius: 50% 50% 50% 0;
+    }
+  .petals:before {
+    transform: rotate(-120deg);
+    transform-origin: -1em 6em;
+    }
+  .petals:after {
+    transform: rotate(120deg);
+    transform-origin: -1em 6em;
+    }
+  .petals:nth-child(2) {
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    transform-origin: -1em 5em;
+    }   
+  
+  .wrapper {
+    position: relative;
+    margin: 4em 2em;
+    }
+  .wrapper:after {
+    top: 4em;
+    left: 5em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0 0 0px 10px gold inset;
+  }
+
+  .rotate {
+        width: 10em;
+  }
+  /* @media (prefers-reduced-motion: no-preference) {
+    .rotate {
+        animation: App-logo-spin infinite 30s linear;
+    }
+} */
+
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.grid {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 10%;
+}
