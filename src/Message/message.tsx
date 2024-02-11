@@ -4,7 +4,8 @@ import { Modal } from 'antd'
 
 type PropsModal = {
     isOpen:boolean,
-    close : ()=>void
+    close : ()=>void,
+    submit: ()=>void,
 }
 
 
@@ -15,8 +16,8 @@ export const Message: React.FC<PropsWithChildren<PropsModal>> = (props: PropsWit
             className='modalBoby'
             open = {props.isOpen}
             onCancel={props.close}
-            onOk={props.close}
-            cancelText="Звучит интересно"
+            onOk={props.submit}
+            okText="Звучит интересно"
         
             >
                 <p>

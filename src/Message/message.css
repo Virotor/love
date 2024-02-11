@@ -19,14 +19,8 @@ p {
 }
 
 
-.modalBoby .ant-btn-primary {
-    display: none;
-}
-
-
 .modalBoby .ant-btn-default {
-    background-color: aquamarine;
-    content: "Принять";
+    display: none;
 }
 
 .modalBoby .ant-modal-footer {
@@ -34,7 +28,7 @@ p {
     justify-content: center;
 }
 
-.modalBoby .ant-btn-default {
+.modalBoby .ant-btn-primary {
     color: #fff;
     padding-right: 0;
     background-color: #c0392b;
@@ -43,12 +37,13 @@ p {
 
 }
 
-.modalBoby .ant-btn-default:hover {
+.modalBoby .ant-btn-primary:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
 }
 
-.modalBoby .ant-btn-default:after {
+.modalBoby .ant-btn-primary::after {
     content: "\f004";
     color: #e74c3c;
     font-family: FontAwesome;
@@ -58,7 +53,7 @@ p {
     transition: all 0.2s ease;
 }
 
-.modalBoby .ant-btn-default:hover:after {
+.modalBoby .ant-btn-primary:hover::after {
     margin: -5px 15px;
     right: 0px;
 }

@@ -31,6 +31,7 @@ body {
 .heart:hover:before,
 .heart:hover {
   box-shadow: none;
+  cursor: pointer;
 } 
 
 .heart p {
@@ -59,6 +60,8 @@ body {
   margin: 2em 10% 2em 10%;
   padding: 10px;
   font-size: calc(6px + 3vmin);
+  -webkit-user-select:none;
+  user-select: none;
 }
 
 .grid {

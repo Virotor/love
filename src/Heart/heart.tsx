@@ -12,7 +12,8 @@ const Heart: React.FC<PropsWithChildren<{ click: () => void }>> = (props: PropsW
         <>
             <Message
                 isOpen={isModalOpen}
-                close={() => {
+                close= {()=>setModalOpen(false)}
+                submit = {() => {
                     setModalOpen(false)
                     props.click()
                 }}
