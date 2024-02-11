@@ -58,27 +58,15 @@ export const Address: React.FC = () => {
     return (
         <>
             {/* {contextHolder} */}
-            <div style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyItems: 'center',
-                  alignItems: 'center'
-            }}>
+            <div>
                 <p className='text-address'>Подтвердите своё согласие на проведение вечера с классным Мэном</p>
                 {
                     isAgree === false ?
-                        <Alert message="Подумай ещё, только хорошо подумай!!!" type="warning"
+                        <Alert className='alert-continer' message="Подумай ещё, только хорошо подумай!!!" type="warning"
                             showIcon
                             closable
                             onClose={() => setIsAgree(null)}
-                            style={
-                                {
-                                    width: 300,
-                                    height: 100,
-                                    border: 20,
-                                  
-                                }
-                            }
+                            
 
                         />
                         :
@@ -97,7 +85,7 @@ export const Address: React.FC = () => {
                                 playing
                                 loop
                                 muted
-
+        
                             />
                         </div>
                         :

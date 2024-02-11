@@ -56,3 +56,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.alert-continer {
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: calc(6px + 1vmin);  
+    margin: 10px auto;
+} 
