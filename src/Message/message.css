@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+.modalBoby .ant-modal-content {
+    color: black;
+    background-color: #f1f509;
+}
+
+.modalBoby .ant-modal-close {
+    display: none;
+}
+
+
+p {
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: large;
+}
+
+
+.modalBoby .ant-btn-primary {
+    display: none;
+}
+
+
+.modalBoby .ant-btn-default {
+    background-color: aquamarine;
+    content: "Принять";
+}
+
+.modalBoby .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modalBoby .ant-btn-default {
+    color: #fff;
+    padding-right: 0;
+    background-color: #c0392b;
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+
+}
+
+.modalBoby .ant-btn-default:hover {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+}
+
+.modalBoby .ant-btn-default:after {
+    content: "\f004";
+    color: #e74c3c;
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    right: -55px;
+    transition: all 0.2s ease;
+}
+
+.modalBoby .ant-btn-default:hover:after {
+    margin: -5px 15px;
+    right: 0px;
+}

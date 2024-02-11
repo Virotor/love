@@ -1,7 +1,7 @@
 import { Modal } from 'antd';
 import './heart.css'
 import { useState } from 'react';
-import { Message } from '../Message/message';
+import { Message } from '../Message/Message';
 
 
 const Heart: React.FC = () => {
@@ -10,36 +10,28 @@ const Heart: React.FC = () => {
 
     return (
         <>
-
+            <Message
+                isOpen={isModalOpen}
+                close={() => { setModalOpen(false) }}
+            />
             <div className='grid'>
-                <Modal
-                    open={isModalOpen}
-                    onOk={() => setModalOpen(false)}
-                    onCancel={() => setModalOpen(false)}
-
-                >
-                    <Message />
-                </Modal>
+{/* 
                 <div className='rotate'>
-                    <div className="wrapper">
-                        <div className="petals"></div>
-                        <div className="petals"></div>
-                    </div>
-                </div>
+                    <p>
+                        sdskhfjksdhfjkhdsjkhfjhjkfhajkhfjkahdjfhajkhfjkadhfkjadjhfdhfdhadhajhfajkddfhakjdshfkajdsfhjkadshfjkhadsf
+                    </p>
+                </div> */}
                 <div className='heartWrapper'>
                     <div className="heart" onClick={() => setModalOpen(true)} >
                         <p>Click, me</p>
                     </div>
 
                 </div>
-
-
-                <div className='rotate'>
-                    <div className="wrapper">
-                        <div className="petals"></div>
-                        <div className="petals"></div>
-                    </div>
-                </div>
+                {/* <div className='rotate'>
+                    <p>
+                        sdskhfjksdhfjkhdsjkhfjhjkfhajkhfjkahdjfhajkhfjkadhfkjadjhfdhfdhadhajhfajkddfhakjdshfkajdsfhjkadshfjkhadsf
+                    </p>
+                </div> */}
             </div>
 
         </>
