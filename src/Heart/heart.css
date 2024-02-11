@@ -1,5 +1,9 @@
 body {
   background-color: #225fb9;
+  background-image: url('https://100idey.com.ua/image/cache/catalog/image/catalog/detailed/28/TL-65.webp') ;
+  background-size: cover;
+  -webkit-backdrop-filter : blur(4px);
+  backdrop-filter:  blur(10px);
 }
 
 .heart {

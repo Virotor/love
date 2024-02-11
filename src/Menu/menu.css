@@ -1,0 +1,38 @@
+
+
+.container-dish{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    background-image: url('https://st3.depositphotos.com/1006472/12950/i/950/depositphotos_129501428-stock-photo-rustic-wooden-board-texture-table.jpg');
+    background-size:cover;
+}
+
+
+.column {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20%;
+    box-shadow: -1px 10px 10px black, 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width : 890px) {
+    .column{
+        width: 99%;
+    }
+}   
+
+
+.text-menu {
+    font-size: calc(6px + 5vmin);
+    margin: 20px auto 40px auto;
+    color: yellow;
+    box-shadow: -1px 1.2em 1em black;
+}
