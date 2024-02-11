@@ -34,5 +34,5 @@
     font-size: calc(6px + 5vmin);
     margin: 20px auto 40px auto;
     color: yellow;
-    box-shadow: -1px 1.2em 1em black;
+    /* box-shadow: -1px 1.2em 1em black; */
 }
